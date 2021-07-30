@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSA Filmzoeker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script defer type="text/javascript" src="data.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body class="container">
+    <header class="header">
+      <h1>Welkom bij de filmzoeker</h1>
+      <h3>check je favouriete Disney Movies</h3>
+    </header>
+
+    <nav class="menu">
+      <div class="filter filter-nieuw">
+        <input type="radio" id="nieuw" name="filter" value="nieuw" />
+        <label for="nieuw">Releases vanaf 2014</label>
+      </div>
+      <div class="filter filter-avengers">
+        <input type="radio" id="avengers" name="filter" value="avengers" />
+        <label for="avengers">Avengers</label>
+      </div>
+      <div class="filter filter-xmen">
+        <input type="radio" id="xmen" name="filter" value="xmen" />
+        <label for="xmen">X-men</label>
+      </div>
+      <div class="filter filter-princess">
+        <input type="radio" id="princess" name="filter" value="princess" />
+        <label for="princess">Princess</label>
+      </div>
+      <div class="filter filter-batman">
+        <input type="radio" id="batman" name="filter" value="batman" />
+        <label for="batman">Batman</label>
+      </div>
+    </nav>
+
+    <main class="films">
+      <ul id="overzicht"></ul>
+    </main>
+  </body>
+</html>
